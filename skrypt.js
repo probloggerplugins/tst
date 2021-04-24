@@ -6,6 +6,6 @@ async function huj() {
 	
 }
 
-faceapi.loadSsdMobilenetv1Model('/tst').then(() => {
+faceapi.loadSsdMobilenetv1Model('https://probloggerplugins.github.io/tst/').then(() => {
 	fullFaceDescriptions = faceapi.detectAllFaces(img).withFaceLandmarks().withFaceDescriptors();
 });
