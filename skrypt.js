@@ -6,6 +6,6 @@ async function huj() {
 	
 }
 
-faceapi.loadSsdMobilenetv1Model('models').then(() => {
+faceapi.loadSsdMobilenetv1Model('https://cdn.jsdelivr.net/gh/justadudewhohacks/face-api.js/weights/ssd_mobilenetv1_model-weights_manifest.json').then(() => {
 	fullFaceDescriptions = faceapi.detectAllFaces(img).withFaceLandmarks().withFaceDescriptors();
 });
