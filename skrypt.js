@@ -14,7 +14,7 @@ const detectionsForSize = faceapi.resizeResults(detections, { width: img.width, 
 // draw them into a canvas
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
-canvas.width = input.width
-canvas.height = input.height
+canvas.width = img.width
+canvas.height = img.height
 faceapi.drawDetection(canvas, detectionsForSize, { withScore: true })
 });
